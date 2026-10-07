@@ -38,9 +38,9 @@ export default function Header() {
       <div className="container-page">
         <div className="flex h-16 items-center justify-between gap-4 sm:h-[72px]">
           <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-            <Logo size={40} id="hdr" />
+            <Logo size={44} priority />
             <span className="flex flex-col leading-tight">
-              <span className="text-lg font-extrabold tracking-tight text-slate-900">NEXTMIND</span>
+              <span className="text-lg font-extrabold tracking-tight text-slate-900">E-Sahayak</span>
               <span className="hidden text-[11px] text-slate-500 sm:block font-kn">{t(lang, 'tagline')}</span>
             </span>
           </Link>

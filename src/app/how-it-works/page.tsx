@@ -6,7 +6,7 @@ import Disclaimer from '@/components/Disclaimer';
 
 export const metadata: Metadata = {
   title: 'How It Works — ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ',
-  description: 'Learn how NextMind makes Karnataka government schemes easy to understand — search, eligibility, documents and step-by-step guides.',
+  description: 'Learn how E-Sahayak makes Karnataka government schemes easy to understand — search, eligibility, documents and step-by-step guides.',
 };
 
 const steps = [

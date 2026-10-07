@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: { 'kn-IN': `/kannada/schemes/${scheme.slug}`, 'en-US': `/schemes/${scheme.slug}` },
     },
     openGraph: {
-      title: `${scheme.name_en} | NextMind`,
+      title: `${scheme.name_en} | E-Sahayak`,
       description: desc,
       type: 'article',
     },

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getLang } from '@/lib/lang';
 import { t } from '@/lib/i18n';
 import FindSchemesForm from '@/components/FindSchemesForm';
+import ESahayakCard from '@/components/ESahayakCard';
 import Disclaimer from '@/components/Disclaimer';
 
 export const dynamic = 'force-dynamic';
@@ -25,6 +26,10 @@ export default function FindSchemesPage() {
       </div>
 
       <div className="mt-8">
+        <ESahayakCard />
+      </div>
+
+      <div className="mt-6">
         <FindSchemesForm />
       </div>
 

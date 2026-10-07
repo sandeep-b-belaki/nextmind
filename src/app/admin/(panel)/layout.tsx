@@ -14,9 +14,9 @@ export default async function AdminLayout({ children }: { children: React.ReactN
     <div className="flex min-h-screen bg-slate-100">
       <aside className="hidden w-60 shrink-0 flex-col bg-slate-900 p-4 lg:flex">
         <Link href="/admin" className="mb-6 flex items-center gap-2 px-2">
-          <Logo size={36} id="admin-side" />
+          <Logo size={36} />
           <span>
-            <span className="block text-sm font-extrabold text-white">NEXTMIND</span>
+            <span className="block text-sm font-extrabold text-white">E-Sahayak</span>
             <span className="block text-[10px] font-medium text-slate-400">Admin Panel</span>
           </span>
         </Link>
@@ -29,7 +29,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
       <div className="flex min-w-0 flex-1 flex-col">
         <header className="flex items-center justify-between border-b border-slate-200 bg-white px-4 py-3 lg:hidden">
           <Link href="/admin" className="text-sm font-extrabold text-slate-900">
-            NEXTMIND Admin
+            E-Sahayak Admin
           </Link>
           <Link href="/" className="text-xs font-semibold text-brand-700">
             View site →

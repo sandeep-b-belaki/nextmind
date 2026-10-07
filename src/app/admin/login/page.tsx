@@ -39,12 +39,12 @@ export default function AdminLoginPage() {
     <div className="flex min-h-screen items-center justify-center bg-slate-100 px-4 py-10">
       <div className="w-full max-w-md">
         <Link href="/" className="mb-6 flex items-center justify-center gap-2">
-          <Logo size={44} id="admin-login" />
-          <span className="text-xl font-extrabold text-slate-900">NEXTMIND</span>
+          <Logo size={48} />
+          <span className="text-xl font-extrabold text-slate-900">E-Sahayak</span>
         </Link>
         <div className="card p-6 sm:p-8">
           <h1 className="text-center text-xl font-extrabold text-slate-900">🔐 Admin Login</h1>
-          <p className="mt-1 text-center text-xs text-slate-400">Secure admin access — NextMind Dashboard</p>
+          <p className="mt-1 text-center text-xs text-slate-400">Secure admin access — E-Sahayak Dashboard</p>
           <form onSubmit={submit} className="mt-6">
             <div>
               <label htmlFor="a-email" className="label">Email</label>

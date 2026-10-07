@@ -7,7 +7,7 @@ import Disclaimer from '@/components/Disclaimer';
 
 export const metadata: Metadata = {
   title: 'Contact — ಸಂಪರ್ಕಿಸಿ',
-  description: 'Contact NextMind with questions, feedback, or to report incorrect scheme information.',
+  description: 'Contact E-Sahayak with questions, feedback, or to report incorrect scheme information.',
 };
 
 export default function ContactPage() {

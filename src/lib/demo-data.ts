@@ -729,18 +729,25 @@ export const demoSchemes: DemoSchemeSeed[] = [
   },
 ];
 
+// All 31 districts of Karnataka, in the same order across the three languages.
 export const districts_kn = [
   'ಬೆಂಗಳೂರು ನಗರ', 'ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ', 'ಮೈಸೂರು', 'ಹುಬ್ಬಳ್ಳಿ-ಧಾರವಾಡ', 'ಮಂಗಳೂರು',
   'ಬಳ್ಳಾರಿ', 'ಬೆಳಗಾವಿ', 'ವಿಜಯಪುರ', 'ಕಲಬುರಗಿ', 'ತುಮಕೂರು', 'ಶಿವಮೊಗ್ಗ', 'ರಾಯಚೂರು',
-  'ಉಡುಪಿ', 'ಹಾಸನ', 'ಒಳ್ಳೇ ಮೈಸೂರು', 'ಗದಗ', 'ಕೊಪ್ಪಳ', 'ಬೀದರ್', 'ಚಿಕ್ಕಮಗಳೂರು', 'ಕೊಡಗು',
+  'ಉಡುಪಿ', 'ಹಾಸನ', 'ಮಂಡ್ಯ', 'ಗದಗ', 'ಕೊಪ್ಪಳ', 'ಬೀದರ್', 'ಚಿಕ್ಕಮಗಳೂರು', 'ಕೊಡಗು',
+  'ಬಾಗಲಕೋಟೆ', 'ಚಾಮರಾಜನಗರ', 'ಚಿಕ್ಕಬಳ್ಳಾಪುರ', 'ಚಿತ್ರದುರ್ಗ', 'ದಾವಣಗೆರೆ', 'ಹಾವೇರಿ',
+  'ಕೋಲಾರ', 'ರಾಮನಗರ', 'ಉತ್ತರ ಕನ್ನಡ', 'ವಿಜಯನಗರ', 'ಯಾದಗಿರಿ',
 ];
 export const districts_hi = [
   'बेंगलुरु नगर', 'बेंगलुरु ग्रामीण', 'मैसूर', 'हुब्बली-धारवाड़', 'मंगलूर',
   'बल्लारी', 'बेलगावी', 'विजयपुर', 'कलबुरगी', 'तुमकूर', 'शिवमोग्गा', 'रायचूर',
   'उडुपी', 'हासन', 'मंड्या', 'गदग', 'कोप्पल', 'बीदर', 'चिक्कमगलुरु', 'कोडगु',
+  'बागलकोट', 'चामराजनगर', 'चिक्कबल्लापुर', 'चित्रदुर्ग', 'दावणगेरे', 'हावेरी',
+  'कोलार', 'रामनगर', 'उत्तर कन्नड़', 'विजयनगर', 'यादगिरि',
 ];
 export const districts_en = [
   'Bengaluru City', 'Bengaluru Rural', 'Mysuru', 'Hubballi-Dharwad', 'Mangaluru',
   'Ballari', 'Belagavi', 'Vijayapura', 'Kalaburagi', 'Tumakuru', 'Shivamogga', 'Raichur',
   'Udupi', 'Hassan', 'Mandya', 'Gadag', 'Koppal', 'Bidar', 'Chikkamagaluru', 'Kodagu',
+  'Bagalkote', 'Chamarajanagar', 'Chikkaballapur', 'Chitradurga', 'Davanagere', 'Haveri',
+  'Kolar', 'Ramanagara', 'Uttara Kannada', 'Vijayanagara', 'Yadgir',
 ];

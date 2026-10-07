@@ -18,7 +18,7 @@ export default async function AdminSettingsPage() {
           <dl className="mt-3 space-y-2 text-sm">
             <div className="flex justify-between gap-3">
               <dt className="text-slate-500">Name</dt>
-              <dd className="font-bold text-slate-800">NextMind</dd>
+              <dd className="font-bold text-slate-800">E-Sahayak</dd>
             </div>
             <div className="flex justify-between gap-3">
               <dt className="text-slate-500">Total schemes</dt>

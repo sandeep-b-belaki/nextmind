@@ -16,8 +16,8 @@ export default function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-2">
-              <Logo size={36} id="ftr" />
-              <span className="text-lg font-extrabold text-slate-900">NEXTMIND</span>
+              <Logo size={40} />
+              <span className="text-lg font-extrabold text-slate-900">E-Sahayak</span>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-slate-500 font-kn">{t(lang, 'footer.about')}</p>
           </div>
@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 flex flex-col items-start justify-between gap-3 border-t border-slate-100 pt-6 text-xs text-slate-400 sm:flex-row sm:items-center">
-          <span>© {new Date().getFullYear()} NextMind. {t(lang, 'footer.rights')}</span>
+          <span>© {new Date().getFullYear()} E-Sahayak. {t(lang, 'footer.rights')}</span>
           <span className="font-semibold text-amber-600">{t(lang, 'demo.footer')}</span>
         </div>
       </div>

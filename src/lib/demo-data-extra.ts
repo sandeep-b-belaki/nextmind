@@ -195,6 +195,102 @@ export const extraSchemes: DemoSchemeSeed[] = [
     views: 3420,
   }),
 
+  // ── engineering students ────────────────────────────────
+  build({
+    slug: 'engineering-merit-scholarship-2026', cat: 'students', last: '2026-12-31',
+    kn: 'ಇಂಜಿನಿಯರಿಂಗ್ ಶ್ರೇಷ್ಠತಾ ವೇತನ', en: 'Engineering Merit Scholarship', hi: 'इंजीनियरिंग मेरिट छात्रवृत्ति',
+    dkn: 'BE/B.Tech ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಅಂಕಗಳ ಆಧಾರದ ಮೇಲೆ ಶೈಕ್ಷಣಿಕ ವೇತನ.', den: 'Score-based scholarship for BE/B.Tech students.', dhi: 'BE/B.Tech छात्रों के लिए अंकों के आधार पर शैक्षिक छात्रवृत्ति।',
+    skn: 'ಕಲಿಕೆಯಲ್ಲಿ ಶ್ರೇಷ್ಠ ಸಾಧನೆ ಮಾಡಿದ ಇಂಜಿನಿಯರಿಂಗ್ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಪ್ರತಿ ಸೆಮಿಸ್ಟರ್‌ನಲ್ಲಿ ವೇತನ ನೇರವಾಗಿ ಬ್ಯಾಂಕ್ ಖಾತೆಗೆ ಜಮಾ ಆಗುತ್ತದೆ.', sen: 'Students with top scores in engineering receive a semester scholarship credited directly to their bank account.', shi: 'इंजीनियरिंग में टॉप अंक पाने वाले छात्रों को हर सेमेस्टर छात्रवृत्ति सीधे बैंक खाते में जमा होती है।',
+    elig: [
+      { field: 'residency', operator: 'eq', value: 'true' },
+      { field: 'student', operator: 'eq', value: 'true' },
+      { field: 'age_max', operator: 'lte', value: '30' },
+      { field: 'income_max', operator: 'lte', value: '500000' },
+    ],
+    views: 3150,
+  }),
+  build({
+    slug: 'engineering-fee-reimbursement-2026', cat: 'students', last: '2026-12-31',
+    kn: 'ಇಂಜಿನಿಯರಿಂಗ್ ಶುಲ್ಕ ಪ್ರತಿಪಾವನಿ', en: 'Engineering Fee Reimbursement', hi: 'इंजीनियरिंग शुल्क प्रतिपूर्ति',
+    dkn: 'ಅರ್ಹ ವಿದ್ಯಾರ್ಥಿಗಳ ಎಂಜಿನಿಯರಿಂಗ್ ಕಾಲೇಜ್ ಶುಲ್ಕ ಹಿಂಪಾವನಿ.', den: 'College fee reimbursement for eligible engineering students.', dhi: 'पात्र इंजीनियरिंग छात्रों की कॉलेज शुल्क प्रतिपूर्ति।',
+    skn: 'ವಾರ್ಷಿಕ ಆದಾಯ ಮಿತಿ ಒಳಗಿನ ಅರ್ಹ ವಿದ್ಯಾರ್ಥಿಗಳ ಕಾಲೇಜ್ ಶುಲ್ಕವನ್ನು ಸರ್ಕಾರ ಹಿಂಪಾವನಿ ಮಾಡುತ್ತದೆ. ಶುಲ್ಕ ರಸೀದಿ ಸಲ್ಲಿಸುವುದು ಕಡ್ಡಾಯ.', sen: 'The government reimburses college fees for eligible students within the income limit. Submitting the fee receipt is mandatory.', shi: 'आय सीमा के भीतर के पात्र छात्रों की कॉलेज शुल्क सरकार प्रतिपूर्ति करती है। शुल्क रसीद जमा करना अनिवार्य है।',
+    elig: [
+      { field: 'residency', operator: 'eq', value: 'true' },
+      { field: 'student', operator: 'eq', value: 'true' },
+      { field: 'age_max', operator: 'lte', value: '30' },
+      { field: 'income_max', operator: 'lte', value: '250000' },
+    ],
+    views: 3620,
+  }),
+  build({
+    slug: 'engineering-internship-stipend-2026', cat: 'students', dept: 'skill-development', last: '2027-01-31',
+    kn: 'ಇಂಜಿನಿಯರಿಂಗ್ ಇಂಟರ್ನ್‌ಶಿಪ್ ಭತ್ಯೆ', en: 'Engineering Internship Stipend', hi: 'इंजीनियरिंग इंटर्नशिप भत्ता',
+    dkn: 'ಎಂಜಿನಿಯರಿಂಗ್ ವಿದ್ಯಾರ್ಥಿಗಳ ಕಂಪನಿ ಇಂಟರ್ನ್‌ಶಿಪ್‌ಗೆ ಮಾಸಿಕ ಭತ್ಯೆ.', den: 'Monthly stipend for engineering students doing company internships.', dhi: 'कंपनी इंटर्नशिप कर रहे इंजीनियरिंग छात्रों के लिए मासिक भत्ता।',
+    skn: 'ಆಯ್ಕೆಯಾದ ವಿದ್ಯಾರ್ಥಿಗಳು ಮಾನ್ಯತೆ ಪಡೆದ ಕಂಪನಿಯಲ್ಲಿ ಇಂಟರ್ನ್‌ಶಿಪ್ ಮಾಡಿದರೆ ಪ್ರತಿ ತಿಂಗಳು ಭತ್ಯೆ ಸಿಗುತ್ತದೆ.', sen: 'Selected students earn a monthly stipend while interning at a recognised company.', shi: 'चयनित छात्र मान्यता प्राप्त कंपनी में इंटर्नशिप के दौरान मासिक भत्ता पाते हैं।',
+    elig: [
+      { field: 'residency', operator: 'eq', value: 'true' },
+      { field: 'student', operator: 'eq', value: 'true' },
+      { field: 'age_max', operator: 'lte', value: '28' },
+      { field: 'income_max', operator: 'lte', value: '800000' },
+    ],
+    views: 2870,
+  }),
+  build({
+    slug: 'polytechnic-diploma-scholarship-2026', cat: 'students', dept: 'skill-development', last: '2026-12-15',
+    kn: 'ಪಾಲಿಟೆಕ್ನಿಕ್ ಡಿಪ್ಲೊಮಾ ವೇತನ', en: 'Polytechnic Diploma Scholarship', hi: 'पॉलिटेक्निक डिप्लोमा छात्रवृत्ति',
+    dkn: 'ತಾಂತ್ರಿಕ ಡಿಪ್ಲೊಮಾ (ಪಾಲಿಟೆಕ್ನಿಕ್) ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಶೈಕ್ಷಣಿಕ ವೇತನ.', den: 'Educational scholarship for technical diploma (polytechnic) students.', dhi: 'तकनीकी डिप्लोमा (पॉलिटेक्निक) छात्रों के लिए शैक्षिक छात्रवृत्ति।',
+    skn: 'ಡಿಪ್ಲೊಮಾ ಮಾಡುತ್ತಿರುವ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ವಾರ್ಷಿಕ ವೇತನ ಮತ್ತು ಪಠ್ಯಪುಸ್ತಕ ಸಹಾಯ ಧನ ನೇರವಾಗಿ ಬ್ಯಾಂಕ್‌ಗೆ ಜಮಾ ಆಗುತ್ತದೆ.', sen: 'Diploma students get an annual scholarship and book allowance credited directly to their bank.', shi: 'डिप्लोमा कर रहे छात्रों को वार्षिक छात्रवृत्ति और पुस्तक भत्ता सीधे बैंक में जमा होता है।',
+    views: 2440,
+  }),
+
+  // ── medical students ────────────────────────────────────
+  build({
+    slug: 'medical-merit-scholarship-2026', cat: 'students', dept: 'health-family-welfare', last: '2026-12-31',
+    kn: 'ವೈದ್ಯಕೀಯ ಶ್ರೇಷ್ಠತಾ ವೇತನ', en: 'Medical Merit Scholarship', hi: 'चिकित्सा मेरिट छात्रवृत्ति',
+    dkn: 'MBBS/BDS ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಅಂಕಗಳ ಆಧಾರದ ಮೇಲೆ ಶೈಕ್ಷಣಿಕ ವೇತನ.', den: 'Score-based scholarship for MBBS/BDS students.', dhi: 'MBBS/BDS छात्रों के लिए अंकों के आधार पर शैक्षिक छात्रवृत्ति।',
+    skn: 'ವೈದ್ಯಕೀಯ ವಿದ್ಯಾಭ್ಯಾಸದಲ್ಲಿ ಶ್ರೇಷ್ಠ ಅಂಕ ಗಳಿಸಿದ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಪ್ರತಿ ಸೆಮಿಸ್ಟರ್ ವೇತನ ದೊರೆಯುತ್ತದೆ.', sen: 'Students who score top marks in medical studies receive a scholarship every semester.', shi: 'चिकित्सा शिक्षा में टॉप अंक पाने वाले छात्रों को हर सेमेस्टर छात्रवृत्ति मिलती है।',
+    elig: [
+      { field: 'residency', operator: 'eq', value: 'true' },
+      { field: 'student', operator: 'eq', value: 'true' },
+      { field: 'age_max', operator: 'lte', value: '30' },
+      { field: 'income_max', operator: 'lte', value: '500000' },
+    ],
+    views: 3980,
+  }),
+  build({
+    slug: 'medical-intern-stipend-2026', cat: 'students', dept: 'health-family-welfare', last: '2027-03-31',
+    kn: 'ವೈದ್ಯಕೀಯ ಇಂಟರ್ನ್‌ಶಿಪ್ ಭತ್ಯೆ', en: 'Medical Internship Stipend', hi: 'चिकित्सा इंटर्नशिप भत्ता',
+    dkn: 'ಹೌಸ್‌ಸರ್ಜನ್/ವೈದ್ಯಕೀಯ ಇಂಟರ್ನ್‌ಗಳಿಗೆ ಮಾಸಿಕ ಭತ್ಯೆ.', den: 'Monthly stipend for house surgeons / medical interns.', dhi: 'हाउस सर्जन/चिकित्सा इंटर्न के लिए मासिक भत्ता।',
+    skn: 'ಎಂಬಿಬಿಎಸ್ ಪೂರ್ಣಗೊಳಿಸಿ ಕಡ್ಡಾಯ ಇಂಟರ್ನ್‌ಶಿಪ್ ಮಾಡುತ್ತಿರುವವರಿಗೆ ಸರ್ಕಾರದಿಂದ ಮಾಸಿಕ ಭತ್ಯೆ ನೀಡಲಾಗುತ್ತದೆ.', sen: 'The government pays a monthly stipend to those doing the compulsory internship after MBBS.', shi: 'एमबीबीएस के बाद अनिवार्य इंटर्नशिप करने वालों को सरकार मासिक भत्ता देती है।',
+    elig: [
+      { field: 'residency', operator: 'eq', value: 'true' },
+      { field: 'student', operator: 'eq', value: 'true' },
+      { field: 'age_max', operator: 'lte', value: '30' },
+      { field: 'income_max', operator: 'lte', value: '800000' },
+    ],
+    views: 3310,
+  }),
+  build({
+    slug: 'neet-coaching-support-2026', cat: 'students', dept: 'skill-development', last: '2026-12-31',
+    kn: 'ನೀಟ್ ತರಬೇತಿ ಬೆಂಬಲ ಯೋಜನೆ', en: 'NEET Coaching Support Scheme', hi: 'नीट कोचिंग सहायता योजना',
+    dkn: 'ಸರ್ಕಾರಿ ಪದವಿಪೂರ್ವ ಕಾಲೇಜ್ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಉಚಿತ ನೀಟ್ ತರಬೇತಿ.', den: 'Free NEET coaching for government pre-university students.', dhi: 'सरकारी प्री-यूनिवर्सिटी छात्रों के लिए मुफ़्त नीट कोचिंग।',
+    skn: 'ಆಯ್ಕೆಯಾದ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಅನುಭವಿ ಬೋಧಕರಿಂದ ಉಚಿತ ನೀಟ್ ತರಬೇತಿ ಮತ್ತು ಅಗತ್ಯ ಪುಸ್ತಕಗಳು ಉಚಿತವಾಗಿ ಸಿಗುತ್ತವೆ.', sen: 'Selected students get free NEET coaching from experienced faculty along with the required books.', shi: 'चयनित छात्रों को अनुभवी शिक्षकों से मुफ़्त नीट कोचिंग और आवश्यक पुस्तकें मिलती हैं।',
+    elig: [
+      { field: 'residency', operator: 'eq', value: 'true' },
+      { field: 'student', operator: 'eq', value: 'true' },
+      { field: 'age_max', operator: 'lte', value: '25' },
+      { field: 'income_max', operator: 'lte', value: '300000' },
+    ],
+    views: 4560,
+  }),
+  build({
+    slug: 'nursing-allied-health-scholarship-2026', cat: 'students', dept: 'health-family-welfare', last: '2027-01-31',
+    kn: 'ನರ್ಸಿಂಗ್ ಮತ್ತು ಸಹಾಯಕ ಆರೋಗ್ಯ ವೇತನ', en: 'Nursing & Allied Health Scholarship', hi: 'नर्सिंग एवं पैरा-मेडिकल छात्रवृत्ति',
+    dkn: 'ನರ್ಸಿಂಗ್ ಮತ್ತು ಪ್ಯಾರಾಮೆಡಿಕಲ್ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಶೈಕ್ಷಣಿಕ ವೇತನ.', den: 'Educational scholarship for nursing and paramedical students.', dhi: 'नर्सिंग और पैरा-मेडिकल छात्रों के लिए शैक्षिक छात्रवृत्ति।',
+    skn: 'ಆರೋಗ್ಯ ಸೇವೆಯಲ್ಲಿ ತರಬೇತಿ ಪಡೆಯುತ್ತಿರುವ ನರ್ಸಿಂಗ್ ಮತ್ತು ಪ್ಯಾರಾಮೆಡಿಕಲ್ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಮಾಸಿಕ ವೇತನ ನೇರವಾಗಿ ಬ್ಯಾಂಕ್‌ಗೆ ಜಮಾ ಆಗುತ್ತದೆ.', sen: 'Students training in nursing and paramedical courses receive a monthly stipend credited directly to their bank.', shi: 'नर्सिंग और पैरा-मेडिकल पाठ्यक्रमों में प्रशिक्षण ले रहे छात्रों को मासिक वेतन सीधे बैंक में जमा होता है।',
+    views: 2960,
+  }),
+
   // ── women ────────────────────────────────────────────────
   build({
     slug: 'maternity-benefit-cash-2026', cat: 'women', last: '2026-12-31',

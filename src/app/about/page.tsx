@@ -5,9 +5,9 @@ import { t, content } from '@/lib/i18n';
 import Disclaimer from '@/components/Disclaimer';
 
 export const metadata: Metadata = {
-  title: 'About — NextMind ಎಂದರೇನು?',
+  title: 'About — E-Sahayak ಎಂದರೇನು?',
   description:
-    'NextMind helps citizens understand Karnataka government schemes without reading complicated government documents. Independent information platform.',
+    'E-Sahayak helps citizens understand Karnataka government schemes without reading complicated government documents. Independent information platform.',
 };
 
 export default function AboutPage() {

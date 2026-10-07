@@ -1,12 +1,12 @@
-# NextMind
+# E-Sahayak
 
 **Government Schemes, Explained Simply.** (ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು, ಸರಳವಾಗಿ ವಿವರಿಸಲ್ಪಟ್ಟಿವೆ)
 
 🔗 **Live:** https://nextmind-delta.vercel.app
 
-NextMind is a Kannada-first information platform that explains Karnataka Government schemes, scholarships, yojanas, subsidies and welfare programs in simple language — with eligibility, document checklists, step-by-step application guides and official links.
+E-Sahayak is a Kannada-first information platform that explains Karnataka Government schemes, scholarships, yojanas, subsidies and welfare programs in simple language — with eligibility, document checklists, step-by-step application guides and official links.
 
-> ⚠️ **NextMind is an independent information platform and is NOT a government website.**
+> ⚠️ **E-Sahayak is an independent information platform and is NOT a government website.**
 > All schemes in this build are clearly labelled **DEMO DATA** — sample content, not real government schemes.
 
 ## Quick start
@@ -20,10 +20,12 @@ npm run dev
 Open http://localhost:3000
 
 On the first request the app applies `docs/schema.postgresql.sql` and seeds the
-demo content (100 schemes, 10 categories) into the database — no manual
+demo content (110 schemes, 10 categories) into the database — no manual
 migration step.
 
 - Public site: Home, Schemes (search + filters), Categories, Scheme details, Find Schemes questionnaire, How It Works, About, Contact
+- **E-Sahayak**: the site's digital assistant avatar guiding the Find Schemes questionnaire
+- All **31 districts of Karnataka** in the district question (ಕನ್ನಡ | English | हिन्दी)
 - Language switch: **ಕನ್ನಡ | English** (cookie based; `/kannada/...` URLs also work)
 - User accounts: register/login, saved schemes, notification preferences
 - Admin dashboard: **`/admin`** — see [Admin dashboard](#admin-dashboard)

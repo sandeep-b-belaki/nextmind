@@ -14,14 +14,14 @@ const devanagari = Noto_Sans_Devanagari({ subsets: ['devanagari'], variable: '--
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://nextmind.example'),
   title: {
-    default: 'NextMind — ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು, ಸರಳವಾಗಿ ವಿವರಿಸಲ್ಪಟ್ಟಿವೆ',
-    template: '%s | NextMind',
+    default: 'E-Sahayak — ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು, ಸರಳವಾಗಿ ವಿವರಿಸಲ್ಪಟ್ಟಿವೆ',
+    template: '%s | E-Sahayak',
   },
   description:
-    'NextMind — Understand Karnataka Government schemes, scholarships and welfare programs in simple Kannada and English. Eligibility, documents, step-by-step guides and official links.',
+    'E-Sahayak — Understand Karnataka Government schemes, scholarships and welfare programs in simple Kannada and English. Eligibility, documents, step-by-step guides and official links.',
   openGraph: {
     type: 'website',
-    siteName: 'NextMind',
+    siteName: 'E-Sahayak',
     locale: 'kn_IN',
   },
   robots: { index: true, follow: true },
